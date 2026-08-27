@@ -2,12 +2,12 @@
 export libaws_c_common
 
 JLLWrappers.@generate_wrapper_header("aws_c_common")
-JLLWrappers.@declare_library_product(libaws_c_common, "@rpath/libaws-c-common.1.dylib")
+JLLWrappers.@declare_library_product(libaws_c_common, "@rpath/libaws-c-common.1.0.dylib")
 function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libaws_c_common,
-        "lib/libaws-c-common.0.14.5.dylib",
+        "lib/libaws-c-common.1.0.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
