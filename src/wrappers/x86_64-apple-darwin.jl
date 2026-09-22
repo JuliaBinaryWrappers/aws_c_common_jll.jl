@@ -7,7 +7,7 @@ function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libaws_c_common,
-        "lib/libaws-c-common.1.0.0.dylib",
+        "lib/libaws-c-common.1.0.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
